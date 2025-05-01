@@ -9,10 +9,20 @@ while True:
     if type(n) == str and n.lower() == 'stop':
         break
     elif n.isdigit() == False:
-        print("Please give a valid integer")
+        try:
+            if int(n)<0:
+                print("Negative integers are never pallindromes")
+        except:
+            print("Please give a valid integer")
         continue
-    elif n == n[::-1]:
-        res = True
+    elif n.isdigit() == True:
+        l = ''
+        for i in range(len(n)-1,-1,-1):
+            l += n[i]
+            if l == n:
+                res = True
+            else:
+                res = False
     else:
         res = False
         
