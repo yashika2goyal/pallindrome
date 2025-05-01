@@ -30,6 +30,6 @@ while True:
 
 
 '''explaination:-
-This simply works by reversing the string and checking if they are comparable.
+This simply works by reversing the string through for loop and checking if they are comparable.
 It also checks for if the string is not a number, it gives an invalid input message
-as it was asked to input and integer'''
+as it was asked to input an integer'''
